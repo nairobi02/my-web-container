@@ -1,0 +1,14 @@
+# for development environment
+version: "3"
+services:
+  my-web-container:
+    build:
+      context: .
+      args:
+        - NODE_ENV=development
+    volumes:
+      - ./:/app
+      - /app/node_modules
+    environment:
+      - NODE_ENV=development
+    command: npm run dev

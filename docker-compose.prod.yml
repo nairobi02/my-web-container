@@ -1,0 +1,11 @@
+# for production environment
+version: "3"
+services:
+  my-web-container:
+    build:
+      context: .
+      args:
+        - NODE_ENV=production
+    environment:
+      - NODE_ENV=production
+    command: node index.js
