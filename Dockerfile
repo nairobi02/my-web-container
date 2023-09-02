@@ -9,4 +9,5 @@ RUN if [ "$NODE_ENV" = "production" ]; \
     fi
 COPY . ./
 EXPOSE $PORT
-CMD ["node","index.js"]
+CMD ["node","src/index.js"]
+
