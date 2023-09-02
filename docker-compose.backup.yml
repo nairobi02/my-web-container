@@ -1,10 +1,11 @@
-# for shared configurations between environments
 version: "3"
 services:
   my-web-container:
     build: .
     ports:
       - "3000:4000"
+    volumes:
+      - .:/app
+      - /app/node_modules
     env_file:
       - ./.env
-      

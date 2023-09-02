@@ -8,5 +8,4 @@ services:
         - NODE_ENV=production
     environment:
       - NODE_ENV=production
-    command: node src/index.js
-
+    command: node index.js
